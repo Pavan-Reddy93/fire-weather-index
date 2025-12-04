@@ -1,0 +1,19 @@
+# Ignore the virtual environment
+venv/
+
+# Ignore Python cache files
+__pycache__/
+
+# CRITICAL: Ignore the file containing our secret keys
+.env
+
+# Ignore the SQLite database file
+db.sqlite3
+venv/
+__pycache__/
+.env
+db.sqlite3
+instance/
+*.pkl
+*.keras
+*.csv

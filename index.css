@@ -1,0 +1,145 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light; /* Force light mode for this UI */
+  color: #242424;
+  background-color: #f4f4f4; /* A light grey background */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --- Header Styles --- */
+.header {
+  background-color: #00685e; /* Green header from your example */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-right .time {
+  font-size: 0.9rem;
+}
+.header-right select {
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* --- Main Content Styles --- */
+.main-content {
+  flex-grow: 1; /* Takes up all remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Adds scrollbar if content is too tall */
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.fetch-controls input[type="text"],
+.fetch-controls input[type="date"],
+.fetch-controls select,
+.fetch-controls button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.fetch-controls button {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.fetch-controls button:hover {
+  background-color: #d0d0d0;
+}
+
+/* --- Table Styles --- */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scroll for the wide table */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1600px; /* Force table to be wide, enabling scroll */
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+  font-size: 0.8rem;
+}
+td input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+td .remove-btn {
+  padding: 3px 8px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- Footer Styles --- */
+.footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-link {
+  color: #00685e;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+}
+.footer-link:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
